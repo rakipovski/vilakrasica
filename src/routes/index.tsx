@@ -126,8 +126,8 @@ function Index() {
             </div>
             <div>
               <img
-                src={tennisCourt.url}
-                alt="Private tennis court beside the stone villa walls at sunset"
+                src={saunaJacuzzi1.url}
+                alt="Private jacuzzi and cedar sauna at Villa Krasica"
                 className="aspect-square w-full rounded-[min(1.5vw,14px)] object-cover"
                 width={1024}
                 height={1024}
@@ -136,8 +136,8 @@ function Index() {
             </div>
             <div>
               <img
-                src={saunaJacuzzi.url}
-                alt="Warm cedar sauna and jacuzzi corner at Villa Krasica"
+                src={saunaJacuzzi2.url}
+                alt="Jacuzzi with bubbling water and sauna in the background at Villa Krasica"
                 className="aspect-square w-full rounded-[min(1.5vw,14px)] object-cover"
                 width={1024}
                 height={1024}
