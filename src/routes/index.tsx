@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import heroAerial from "@/assets/hero-aerial.jpg.asset.json";
 import galleryPool from "@/assets/gallery-pool.jpg.asset.json";
-import tennisCourt from "@/assets/tennis-court.jpg.asset.json";
-import saunaJacuzzi from "@/assets/sauna-jacuzzi.jpg.asset.json";
+import saunaJacuzzi1 from "@/assets/sauna-jacuzzi-1.jpg.asset.json";
+import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg.asset.json";
 import galleryTerrace from "@/assets/gallery-terrace.jpg.asset.json";
 import terraceSunset from "@/assets/terrace-sunset.jpg.asset.json";
 
