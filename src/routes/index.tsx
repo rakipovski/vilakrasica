@@ -241,6 +241,70 @@ function Index() {
         </div>
       </section>
 
+      {/* GUEST GUIDE */}
+      <section id="guide" className="bg-cream">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:px-12 md:py-28">
+          <p className="mb-4 font-body text-xs uppercase tracking-[0.3em] text-clay">
+            Dear guests
+          </p>
+          <h2 className="max-w-[34ch] font-display text-4xl leading-tight text-ink text-balance md:text-5xl">
+            Everything around the villa, in one place
+          </h2>
+          <p className="mt-6 max-w-[60ch] font-body text-base leading-relaxed text-ink/70">
+            We are looking forward to your arrival at Villa Krasica. Your host
+            will be me, Saša. I want you to feel at home, and I am available for
+            any questions via WhatsApp. Below you will find shops, restaurants
+            and beaches — each with a map link.
+          </p>
+
+          <div className="mt-14 grid gap-12 md:grid-cols-3 md:gap-10">
+            <GuideColumn title="Shops for food" items={SHOPS} />
+            <GuideColumn title="Restaurants" items={RESTAURANTS} />
+            <GuideColumn title="Beaches" items={BEACHES} />
+          </div>
+
+          <div className="mt-16 grid gap-6 rounded-[min(1.5vw,14px)] border border-clay/30 p-8 md:grid-cols-3 md:p-10">
+            <div>
+              <p className="font-body text-xs uppercase tracking-[0.3em] text-clay">
+                Email
+              </p>
+              <a
+                href="mailto:info@villa-krasica.com"
+                className="mt-2 block font-body text-base text-ink transition-colors hover:text-terra"
+              >
+                info@villa-krasica.com
+              </a>
+            </div>
+            <div>
+              <p className="font-body text-xs uppercase tracking-[0.3em] text-clay">
+                Phone
+              </p>
+              <a
+                href="tel:+385917307118"
+                className="mt-2 block font-body text-base text-ink transition-colors hover:text-terra"
+              >
+                +385 91 7307 118
+              </a>
+              <a
+                href="tel:+385911766488"
+                className="block font-body text-base text-ink transition-colors hover:text-terra"
+              >
+                +385 91 1766 488
+              </a>
+            </div>
+            <div>
+              <p className="font-body text-xs uppercase tracking-[0.3em] text-clay">
+                Address
+              </p>
+              <p className="mt-2 font-body text-base text-ink">
+                Krasica 203 b, 51224 Krasica, Croatia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* FINAL CTA */}
       <section
         id="reserve"
