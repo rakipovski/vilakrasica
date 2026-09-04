@@ -9,6 +9,115 @@ import terraceSunset from "@/assets/terrace-sunset.jpg.asset.json";
 
 const BOOKING_URL = "https://www.booking.com/Share-JzZeWOi";
 
+type GuideItem = {
+  name: string;
+  detail: string;
+  distance: string;
+  url: string;
+};
+
+const SHOPS: GuideItem[] = [
+  {
+    name: "Lidl Kukuljanovo",
+    detail: "Kukuljanovo 348, 51227 Kukuljanovo · Mon–Sat 7–21, Sun 8–18",
+    distance: "about 1 km",
+    url: "https://maps.app.goo.gl/41BZJrzH6n54ddQW6",
+  },
+  {
+    name: "Interspar Kukuljanovo",
+    detail: "Kukuljanovo 362, 51227 Kukuljanovo · Mon–Sat 7–21, Sun 8–20",
+    distance: "about 1.5 km",
+    url: "https://maps.app.goo.gl/zYfx9YGsp666593D7",
+  },
+  {
+    name: "Plodine Kukuljanovo",
+    detail: "Kukuljanovo 348, 51227 Kukuljanovo · Mon–Sat 7–21, Sun 8–18",
+    distance: "about 1 km",
+    url: "https://maps.app.goo.gl/9iZZPfeuxUvz3Yyj8",
+  },
+];
+
+const RESTAURANTS: GuideItem[] = [
+  {
+    name: "Konoba Brig",
+    detail: "Brig 29, 51000 Rijeka",
+    distance: "about 15 km",
+    url: "https://maps.app.goo.gl/tpa8TueWTiZnEmVF8",
+  },
+  {
+    name: "Bistro Mornar",
+    detail: "Riva Boduli 5A, 51000 Rijeka",
+    distance: "about 17 km",
+    url: "https://maps.app.goo.gl/YoUyTxb1BHVDsYZZA",
+  },
+  {
+    name: "El Rio",
+    detail: "Jadranski trg 4b, Rijeka",
+    distance: "about 17 km",
+    url: "https://maps.app.goo.gl/gbN9dJMULV64g1Uw6",
+  },
+  {
+    name: "Restoran Sidro",
+    detail: "Črišnjeva 7, 51263 Šmrika",
+    distance: "about 12 km",
+    url: "https://maps.app.goo.gl/eWhNCm92UEKSgioe7",
+  },
+  {
+    name: "Barbacoa",
+    detail: "Riva 1, 51000 Rijeka",
+    distance: "about 17 km",
+    url: "https://maps.app.goo.gl/nyYBQf7BUxSkfWYeA",
+  },
+  {
+    name: "Restoran Ružmarin",
+    detail: "Ulica Ružmarina 1, 51410 Opatija",
+    distance: "about 25 km",
+    url: "https://maps.app.goo.gl/JU7nsULR6zwhJe3PA",
+  },
+  {
+    name: "Restoran Roko",
+    detail: "Ulica Roko 2, 51000 Rijeka",
+    distance: "about 25 km",
+    url: "https://maps.app.goo.gl/sWEZEAashmmmzNno9",
+  },
+];
+
+const BEACHES: GuideItem[] = [
+  {
+    name: "Kostrena beach",
+    detail:
+      "Pebble and concrete beach near Rijeka, good for families and water sports.",
+    distance: "about 15 km",
+    url: "https://maps.app.goo.gl/ioopvaa64TW5G2p36",
+  },
+  {
+    name: "Jadranovo beach",
+    detail: "Pebbles and rock, a calm spot for family days and snorkelling.",
+    distance: "about 32 km",
+    url: "https://maps.app.goo.gl/HArFjRAcaydRRJS4A",
+  },
+  {
+    name: "Crikvenica beach",
+    detail:
+      "Wide pebble beach with plenty of facilities, one of Kvarner's favourites.",
+    distance: "about 45 km",
+    url: "https://maps.app.goo.gl/XhJre7NJxdqDajMN9",
+  },
+  {
+    name: "Njivice beach (Krk island)",
+    detail:
+      "Pebble beach made for families, with cafés and water sports nearby.",
+    distance: "about 60 km",
+    url: "https://maps.app.goo.gl/zKu8EZ4abKwhvGv9A",
+  },
+  {
+    name: "Kačjak beach (Krk island)",
+    detail: "Quiet beach on the south side of Krk, untouched and restful.",
+    distance: "about 65 km",
+    url: "https://maps.app.goo.gl/M8KSLMoeUqMxFB2n8",
+  },
+];
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
