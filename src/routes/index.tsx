@@ -637,3 +637,35 @@ function BathIcon() {
     </svg>
   );
 }
+
+function GuideColumn({ title, items }: { title: string; items: GuideItem[] }) {
+  return (
+    <div>
+      <h3 className="font-body text-xs uppercase tracking-[0.3em] text-terra">
+        {title}
+      </h3>
+      <ul className="mt-6 space-y-6">
+        {items.map((item) => (
+          <li key={item.name}>
+            <a
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block"
+            >
+              <span className="font-body text-base font-medium text-ink transition-colors group-hover:text-terra">
+                {item.name}
+              </span>
+              <span className="mt-1 block font-body text-sm leading-relaxed text-ink/60">
+                {item.detail}
+              </span>
+              <span className="mt-1 block font-body text-xs uppercase tracking-[0.2em] text-clay">
+                {item.distance} · Map
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
