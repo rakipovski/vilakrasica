@@ -171,10 +171,10 @@ function Index() {
             Villa Krasica
           </a>
           <a
-            href="#reserve"
+            href="#guide"
             className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
           >
-            Krasica · Croatia
+            Guest guide
           </a>
         </header>
 
