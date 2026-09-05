@@ -20,19 +20,19 @@ const SHOPS: GuideItem[] = [
   {
     name: "Lidl Kukuljanovo",
     detail: "Kukuljanovo 348, 51227 Kukuljanovo · Mon–Sat 7–21, Sun 8–18",
-    distance: "about 1 km",
+    distance: "about 6 km",
     url: "https://maps.app.goo.gl/41BZJrzH6n54ddQW6",
   },
   {
     name: "Interspar Kukuljanovo",
     detail: "Kukuljanovo 362, 51227 Kukuljanovo · Mon–Sat 7–21, Sun 8–20",
-    distance: "about 1.5 km",
+    distance: "about 6 km",
     url: "https://maps.app.goo.gl/zYfx9YGsp666593D7",
   },
   {
     name: "Plodine Kukuljanovo",
     detail: "Kukuljanovo 348, 51227 Kukuljanovo · Mon–Sat 7–21, Sun 8–18",
-    distance: "about 1 km",
+    distance: "about 6 km",
     url: "https://maps.app.goo.gl/9iZZPfeuxUvz3Yyj8",
   },
 ];
@@ -41,7 +41,7 @@ const RESTAURANTS: GuideItem[] = [
   {
     name: "Konoba Brig",
     detail: "Brig 29, 51000 Rijeka",
-    distance: "about 15 km",
+    distance: "about 8 km",
     url: "https://maps.app.goo.gl/tpa8TueWTiZnEmVF8",
   },
   {
@@ -53,13 +53,13 @@ const RESTAURANTS: GuideItem[] = [
   {
     name: "El Rio",
     detail: "Jadranski trg 4b, Rijeka",
-    distance: "about 17 km",
+    distance: "about 14 km",
     url: "https://maps.app.goo.gl/gbN9dJMULV64g1Uw6",
   },
   {
     name: "Restoran Sidro",
     detail: "Črišnjeva 7, 51263 Šmrika",
-    distance: "about 12 km",
+    distance: "about 13 km",
     url: "https://maps.app.goo.gl/eWhNCm92UEKSgioe7",
   },
   {
@@ -87,33 +87,33 @@ const BEACHES: GuideItem[] = [
     name: "Kostrena beach",
     detail:
       "Pebble and concrete beach near Rijeka, good for families and water sports.",
-    distance: "about 15 km",
+    distance: "about 9 km",
     url: "https://maps.app.goo.gl/ioopvaa64TW5G2p36",
   },
   {
     name: "Jadranovo beach",
     detail: "Pebbles and rock, a calm spot for family days and snorkelling.",
-    distance: "about 32 km",
+    distance: "about 17 km",
     url: "https://maps.app.goo.gl/HArFjRAcaydRRJS4A",
   },
   {
     name: "Crikvenica beach",
     detail:
       "Wide pebble beach with plenty of facilities, one of Kvarner's favourites.",
-    distance: "about 45 km",
+    distance: "about 20 km",
     url: "https://maps.app.goo.gl/XhJre7NJxdqDajMN9",
   },
   {
     name: "Njivice beach (Krk island)",
     detail:
       "Pebble beach made for families, with cafés and water sports nearby.",
-    distance: "about 60 km",
+    distance: "about 35 km",
     url: "https://maps.app.goo.gl/zKu8EZ4abKwhvGv9A",
   },
   {
     name: "Kačjak beach (Krk island)",
     detail: "Quiet beach on the south side of Krk, untouched and restful.",
-    distance: "about 65 km",
+    distance: "about 18 km",
     url: "https://maps.app.goo.gl/M8KSLMoeUqMxFB2n8",
   },
 ];
