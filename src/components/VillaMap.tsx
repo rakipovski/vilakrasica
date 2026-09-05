@@ -18,9 +18,10 @@ const CATEGORY_LABELS: Record<string, string> = {
   beaches: "Beaches",
 };
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
   interface Window {
-    google?: typeof google;
+    google?: any;
     __initVillaMap?: () => void;
   }
 }
@@ -90,8 +91,7 @@ export default function VillaMap() {
       center: { lat: points[0]!.lat, lng: points[0]!.lng },
       mapTypeControl: false,
       streetViewControl: false,
-combineControl: undefined as never,
-    } as google.maps.MapOptions);
+    });
 
     const bounds = new maps.LatLngBounds();
     const info = new maps.InfoWindow();
@@ -107,7 +107,7 @@ combineControl: undefined as never,
         },
         zIndex: point.category === "villa" ? 100 : 1,
       });
-      bounds.extend(marker.getPosition()!);
+      bounds.extend(marker.getPosition());
       marker.addListener("click", () => {
         info.setContent(
           `<div style="font-family:system-ui;max-width:220px"><strong>${point.name}</strong><div style="margin-top:4px;color:#555;font-size:13px">${point.detail}</div>${point.distance ? `<div style="margin-top:4px;color:#8C3B22;font-size:12px;text-transform:uppercase;letter-spacing:.08em">${point.distance}</div>` : ""}<a href="${point.url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:6px;font-size:13px;color:#8C3B22">Open in Google Maps</a></div>`,
