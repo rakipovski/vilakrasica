@@ -394,12 +394,6 @@ function Index() {
               >
                 +385 91 7307 118
               </a>
-              <a
-                href="tel:+385911766488"
-                className="block font-body text-base text-ink transition-colors hover:text-terra"
-              >
-                +385 91 1766 488
-              </a>
             </div>
             <div>
               <p className="font-body text-xs uppercase tracking-[0.3em] text-clay">
