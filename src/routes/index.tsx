@@ -69,14 +69,14 @@ function Index() {
             Villa Krasica
           </a>
           <nav className="flex items-center gap-6 md:gap-8">
-            <a
-              href="#gallery"
+            <Link
+              to="/gallery"
               className="flex items-center gap-2 font-body text-sm tracking-wide text-cream/90 transition-colors hover:text-cream"
               aria-label="Gallery"
             >
               <GalleryIcon />
               <span className="hidden sm:inline">Gallery</span>
-            </a>
+            </Link>
             <a
               href="#guide"
               className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
