@@ -75,6 +75,12 @@ function Index() {
             >
               Gallery
             </Link>
+            <Link
+              to="/information"
+              className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
+            >
+              Information
+            </Link>
             <a
               href="#guide"
               className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
