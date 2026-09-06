@@ -5,6 +5,7 @@ import { ClientOnly } from "@tanstack/react-router";
 import { SHOPS, RESTAURANTS, BEACHES, type GuideItem } from "@/lib/places";
 
 const VillaMap = lazy(() => import("@/components/VillaMap"));
+const VillaWeather = lazy(() => import("@/components/VillaWeather"));
 
 import heroAerial from "@/assets/hero-aerial.jpg.asset.json";
 import galleryPool from "@/assets/gallery-pool.jpg.asset.json";
