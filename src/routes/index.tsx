@@ -68,12 +68,22 @@ function Index() {
           >
             Villa Krasica
           </a>
-          <a
-            href="#guide"
-            className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
-          >
-            Guest guide
-          </a>
+          <nav className="flex items-center gap-6 md:gap-8">
+            <a
+              href="#gallery"
+              className="flex items-center gap-2 font-body text-sm tracking-wide text-cream/90 transition-colors hover:text-cream"
+              aria-label="Gallery"
+            >
+              <GalleryIcon />
+              <span className="hidden sm:inline">Gallery</span>
+            </a>
+            <a
+              href="#guide"
+              className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
+            >
+              Guest guide
+            </a>
+          </nav>
         </header>
 
         <div className="relative z-10 mx-auto flex min-h-[92vh] max-w-6xl flex-col items-start justify-end px-6 pb-16 pt-40 md:px-12 md:pb-24">
