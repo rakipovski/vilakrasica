@@ -68,12 +68,22 @@ function Index() {
           >
             Villa Krasica
           </a>
-          <a
-            href="#guide"
-            className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
-          >
-            Guest guide
-          </a>
+          <nav className="flex items-center gap-6 md:gap-8">
+            <a
+              href="#gallery"
+              className="flex items-center gap-2 font-body text-sm tracking-wide text-cream/90 transition-colors hover:text-cream"
+              aria-label="Gallery"
+            >
+              <GalleryIcon />
+              <span className="hidden sm:inline">Gallery</span>
+            </a>
+            <a
+              href="#guide"
+              className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
+            >
+              Guest guide
+            </a>
+          </nav>
         </header>
 
         <div className="relative z-10 mx-auto flex min-h-[92vh] max-w-6xl flex-col items-start justify-end px-6 pb-16 pt-40 md:px-12 md:pb-24">
@@ -110,7 +120,7 @@ function Index() {
       </section>
 
       {/* GALLERY */}
-      <section className="bg-linen">
+      <section id="gallery" className="bg-linen">
         <div className="mx-auto max-w-6xl px-6 py-20 md:px-12 md:py-28">
           <div className="mb-10 flex items-end justify-between gap-6">
             <h2 className="max-w-[40ch] font-display text-4xl leading-tight text-ink text-balance md:text-5xl">
@@ -439,6 +449,23 @@ function Amenity({
         </p>
       </div>
     </div>
+  );
+}
+
+function GalleryIcon() {
+  return (
+    <svg
+      className="size-5"
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      aria-hidden="true"
+    >
+      <rect x="3" y="4" width="14" height="12" rx="1.5" />
+      <circle cx="7" cy="8" r="1.5" />
+      <path d="M3 14 7 9l4 5 3-3 3 3" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   );
 }
 
