@@ -5,6 +5,7 @@ import { ClientOnly } from "@tanstack/react-router";
 import { SHOPS, RESTAURANTS, BEACHES, type GuideItem } from "@/lib/places";
 
 const VillaMap = lazy(() => import("@/components/VillaMap"));
+const VillaWeather = lazy(() => import("@/components/VillaWeather"));
 
 import heroAerial from "@/assets/hero-aerial.jpg.asset.json";
 import galleryPool from "@/assets/gallery-pool.jpg.asset.json";
@@ -284,6 +285,25 @@ function Index() {
                 }
               >
                 <VillaMap />
+              </Suspense>
+            </ClientOnly>
+          </div>
+
+          <div className="mt-16">
+            <h3 className="mb-6 font-body text-xs uppercase tracking-[0.3em] text-terra">
+              7-day forecast
+            </h3>
+            <ClientOnly
+              fallback={
+                <div className="h-32 w-full rounded-[min(1.5vw,14px)] border border-clay/30 bg-linen" />
+              }
+            >
+              <Suspense
+                fallback={
+                  <div className="h-32 w-full rounded-[min(1.5vw,14px)] border border-clay/30 bg-linen" />
+                }
+              >
+                <VillaWeather />
               </Suspense>
             </ClientOnly>
           </div>
