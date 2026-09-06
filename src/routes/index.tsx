@@ -71,11 +71,9 @@ function Index() {
           <nav className="flex items-center gap-6 md:gap-8">
             <Link
               to="/gallery"
-              className="flex items-center gap-2 font-body text-sm tracking-wide text-cream/90 transition-colors hover:text-cream"
-              aria-label="Gallery"
+              className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
             >
-              <GalleryIcon />
-              <span className="hidden sm:inline">Gallery</span>
+              Gallery
             </Link>
             <a
               href="#guide"
