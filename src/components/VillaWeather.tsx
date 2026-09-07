@@ -73,8 +73,8 @@ export default function VillaWeather() {
   }
 
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-7">
-      {(data ?? Array.from({ length: 7 })).map((day, i) => {
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      {(data ?? Array.from({ length: 3 })).map((day, i) => {
         const d = day as ForecastDay | undefined;
         return (
           <div
