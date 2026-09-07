@@ -316,7 +316,7 @@ function Index() {
 
           <div className="mt-16">
             <h3 className="mb-6 font-body text-xs uppercase tracking-[0.3em] text-terra">
-              7-day forecast
+              3-day forecast
             </h3>
             <ClientOnly
               fallback={
