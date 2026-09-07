@@ -15,7 +15,7 @@ export const getForecast = createServerFn({ method: "GET" }).handler(
     const url =
       `https://api.open-meteo.com/v1/forecast?latitude=${LAT}&longitude=${LNG}` +
       `&daily=weather_code,temperature_2m_max,temperature_2m_min` +
-      `&timezone=Europe%2FZagreb&forecast_days=7`;
+      `&timezone=Europe%2FZagreb&forecast_days=3`;
 
     const response = await fetch(url);
     if (!response.ok) {
