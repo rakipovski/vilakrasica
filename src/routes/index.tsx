@@ -48,8 +48,8 @@ function Index() {
   return (
     <main className="font-body text-ink antialiased">
       {/* HERO */}
-      <section className="relative min-h-[92vh] overflow-hidden bg-ink">
-        <div className="absolute inset-0 overflow-hidden">
+      <section className="relative overflow-hidden bg-ink md:min-h-[92vh]">
+        <div className="absolute inset-0 hidden overflow-hidden md:block">
           <img
             src={heroAerial.url}
             alt="Aerial view of Villa Krasica showing the private pool, tennis court, football pitch and the Adriatic sea beyond"
@@ -59,7 +59,8 @@ function Index() {
             fetchPriority="high"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/10 to-ink/30" />
+        <div className="absolute inset-0 hidden bg-gradient-to-t from-ink/70 via-ink/10 to-ink/30 md:block" />
+
 
         <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12">
           <a
@@ -90,8 +91,18 @@ function Index() {
           </nav>
         </header>
 
-        <div className="relative z-10 mx-auto flex min-h-[92vh] max-w-6xl flex-col items-start justify-end px-6 pb-16 pt-40 md:px-12 md:pb-24">
+        <img
+          src={heroAerial.url}
+          alt="Aerial view of Villa Krasica showing the private pool, tennis court, football pitch and the Adriatic sea beyond"
+          className="relative z-10 block w-full md:hidden"
+          width={1320}
+          height={862}
+          fetchPriority="high"
+        />
+
+        <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-start justify-end px-6 pb-16 pt-12 md:min-h-[92vh] md:px-12 md:pb-24 md:pt-40">
           <p className="mb-5 font-body text-xs uppercase tracking-[0.35em] text-cream/80 md:text-sm">
+
             Croatia · Adriatic coast · 5-star private villa
           </p>
           <h1 className="max-w-[24ch] font-display text-5xl leading-none text-cream md:text-7xl xl:text-8xl">
