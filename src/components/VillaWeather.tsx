@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { useServerFn } from "@tanstack/react-start";
 
-import { getForecast, type ForecastDay } from "@/lib/weather.functions";
+import { fetchBakarForecast, type ForecastDay } from "@/lib/weather";
 
 function describe(code: number): string {
   if (code === 0) return "Clear sky";
@@ -57,10 +56,9 @@ function dayLabel(date: string, index: number): string {
 }
 
 export default function VillaWeather() {
-  const fetchForecast = useServerFn(getForecast);
   const { data, isError } = useQuery<ForecastDay[]>({
-    queryKey: ["forecast"],
-    queryFn: () => fetchForecast(),
+    queryKey: ["forecast", "bakar"],
+    queryFn: fetchBakarForecast,
     staleTime: 30 * 60 * 1000,
   });
 
