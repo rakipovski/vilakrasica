@@ -7,7 +7,7 @@ import { SHOPS, RESTAURANTS, BEACHES, type GuideItem } from "@/lib/places";
 const VillaMap = lazy(() => import("@/components/VillaMap"));
 const VillaWeather = lazy(() => import("@/components/VillaWeather"));
 
-import heroAerial from "@/assets/hero-aerial.jpg.asset.json";
+import heroAerial from "@/assets/hero-courts.jpg.asset.json";
 import galleryPool from "@/assets/gallery-pool.jpg.asset.json";
 import saunaJacuzzi1 from "@/assets/sauna-jacuzzi-1.jpg.asset.json";
 import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg.asset.json";
@@ -52,7 +52,7 @@ function Index() {
         <div className="absolute inset-0 overflow-hidden">
           <img
             src={heroAerial.url}
-            alt="Aerial view of Villa Krasica with private pool, tennis court and the Adriatic sea beyond"
+            alt="Aerial view of Villa Krasica showing the private pool, tennis court, football pitch and the Adriatic sea beyond"
             className="anim-kenburns h-full w-full object-cover"
             width={1280}
             height={900}
