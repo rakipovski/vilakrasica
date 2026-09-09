@@ -433,12 +433,12 @@ function Index() {
             203 Krasica, 51224 Krasica, Croatia
           </span>
           <a
-            href={BOOKING_URL}
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-sm transition-colors hover:text-cream"
           >
-            Booking.com
+            WhatsApp
           </a>
         </div>
       </footer>
