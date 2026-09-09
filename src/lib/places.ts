@@ -80,14 +80,6 @@ export const RESTAURANTS: GuideItem[] = [
     category: "restaurants",
   },
   {
-    name: "Bistro pizzeria Paris",
-    detail: "Kalorija, Rijeka",
-    distance: "about 12 km",
-    url: "https://maps.google.com/?q=Bistro+pizzeria+Paris%2C+Kalorija%2C+Rijeka%2C+Croatia",
-    query: "Bistro pizzeria Paris, Kalorija, Rijeka, Croatia",
-    category: "restaurants",
-  },
-  {
     name: "Bistro Mornar",
     detail: "Riva Boduli 5A, 51000 Rijeka",
     distance: "about 17 km",
