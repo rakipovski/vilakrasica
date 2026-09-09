@@ -58,7 +58,7 @@ export const RESTAURANTS: GuideItem[] = [
   {
     name: "Pivnica Kont",
     detail: "Šetalište Andrije Kačića Miošića 1, 51000 Rijeka",
-    distance: "about 17 km",
+    distance: "about 13 km",
     url: "https://maps.google.com/?q=Pivnica+Kont%2C+%C5%A0etali%C5%A1te+Andrije+Ka%C4%8Di%C4%87a+Mio%C5%A1i%C4%87a+1%2C+51000+Rijeka%2C+Croatia",
     query: "Pivnica Kont, Šetalište Andrije Kačića Miošića 1, 51000 Rijeka, Croatia",
     category: "restaurants",
@@ -66,7 +66,7 @@ export const RESTAURANTS: GuideItem[] = [
   {
     name: "Restoran Aerosteak",
     detail: "Soboli 53, 51219 Soboli, Čavle",
-    distance: "about 18 km",
+    distance: "about 15 km",
     url: "https://maps.google.com/?q=Restoran+Aerosteak%2C+Soboli+53%2C+51219+Soboli%2C+%C4%8Cavle%2C+Croatia",
     query: "Restoran Aerosteak, Soboli 53, 51219 Soboli, Čavle, Croatia",
     category: "restaurants",
@@ -74,7 +74,7 @@ export const RESTAURANTS: GuideItem[] = [
   {
     name: "Restoran Anić",
     detail: "Rožići 1b, 51221 Kostrena",
-    distance: "about 12 km",
+    distance: "about 11 km",
     url: "https://maps.google.com/?q=Restoran+Ani%C4%87%2C+Ro%C5%BEi%C4%87i+1b%2C+51221+Kostrena%2C+Croatia",
     query: "Restoran Anić, Rožići 1b, 51221 Kostrena, Croatia",
     category: "restaurants",
@@ -82,7 +82,7 @@ export const RESTAURANTS: GuideItem[] = [
   {
     name: "Bistro pizzeria Paris",
     detail: "Kalorija, Rijeka",
-    distance: "about 17 km",
+    distance: "about 12 km",
     url: "https://maps.google.com/?q=Bistro+pizzeria+Paris%2C+Kalorija%2C+Rijeka%2C+Croatia",
     query: "Bistro pizzeria Paris, Kalorija, Rijeka, Croatia",
     category: "restaurants",
