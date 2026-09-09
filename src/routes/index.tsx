@@ -393,16 +393,16 @@ function Index() {
             The terrace is open. The sea is waiting.
           </h2>
           <p className="mx-auto mt-6 max-w-[44ch] font-body text-base leading-relaxed text-cream/85 md:text-lg">
-            Reserve Villa Krasica directly through Booking.com, where the
-            listing, dates and rates live.
+            Get in touch directly for availability, rates, and anything you
+            need for your stay.
           </p>
           <a
-            href={BOOKING_URL}
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="anim-pulse-soft mt-9 inline-flex items-center gap-2 rounded-full bg-cream px-8 py-4 font-body text-sm font-medium text-terra ring-1 ring-cream/30"
           >
-            View on Booking.com
+            Contact me on WhatsApp
             <svg
               className="size-4 shrink-0"
               viewBox="0 0 20 20"
