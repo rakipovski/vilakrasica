@@ -114,10 +114,12 @@ function Index() {
             bedrooms, a sea-view pool, and the whole horizon to yourself.
           </p>
           <a
-            href="#reserve"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="anim-pulse-soft mt-8 inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3 font-body text-sm font-medium text-terra ring-1 ring-cream/30"
           >
-            Reserve your stay
+            Contact me
             <svg
               className="size-4 shrink-0"
               viewBox="0 0 20 20"
