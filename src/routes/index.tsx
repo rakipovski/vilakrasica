@@ -216,9 +216,9 @@ function Index() {
               icon={<WifiIcon />}
             />
             <Amenity
-              title="Near Rijeka"
-              description="The city a short drive away."
-              icon={<LocationIcon />}
+              title="Free parking"
+              description="Space for your cars on the property."
+              icon={<ParkingIcon />}
             />
             <Amenity
               title="3 bedrooms"
@@ -562,6 +562,21 @@ function LocationIcon() {
     >
       <path d="M10 17s6-5 6-9a6 6 0 0 0-12 0c0 4 6 9 6 9Z" />
       <circle cx="10" cy="8" r="2" />
+    </svg>
+  );
+}
+
+function ParkingIcon() {
+  return (
+    <svg
+      className="size-4"
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.3"
+    >
+      <rect x="3" y="4" width="14" height="12" rx="1.5" />
+      <path d="M8 7v6M8 7h2a2 2 0 0 1 0 4H8" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 }
