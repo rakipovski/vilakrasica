@@ -216,9 +216,9 @@ function Index() {
               icon={<WifiIcon />}
             />
             <Amenity
-              title="Near Rijeka"
-              description="The city a short drive away."
-              icon={<LocationIcon />}
+              title="Free parking"
+              description="Space for your cars on the property."
+              icon={<ParkingIcon />}
             />
             <Amenity
               title="3 bedrooms"
