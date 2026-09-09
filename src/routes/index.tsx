@@ -342,10 +342,10 @@ function Index() {
                 Email
               </p>
               <a
-                href="mailto:info@villa-krasica.com"
+                href="mailto:vila.krasica@gmail.com"
                 className="mt-2 block font-body text-base text-ink transition-colors hover:text-terra"
               >
-                info@villa-krasica.com
+                vila.krasica@gmail.com
               </a>
             </div>
             <div>
