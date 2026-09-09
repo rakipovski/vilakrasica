@@ -14,7 +14,8 @@ import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg.asset.json";
 import galleryTerrace from "@/assets/gallery-terrace.jpg.asset.json";
 import terraceSunset from "@/assets/terrace-sunset.jpg.asset.json";
 
-const BOOKING_URL = "https://www.booking.com/Share-JzZeWOi";
+const WHATSAPP_URL =
+  "https://wa.me/385917307118?text=Hi%2C%20I%27m%20interested%20in%20Villa%20Krasica.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -113,10 +114,12 @@ function Index() {
             bedrooms, a sea-view pool, and the whole horizon to yourself.
           </p>
           <a
-            href="#reserve"
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="anim-pulse-soft mt-8 inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3 font-body text-sm font-medium text-terra ring-1 ring-cream/30"
           >
-            Reserve your stay
+            Contact me
             <svg
               className="size-4 shrink-0"
               viewBox="0 0 20 20"
@@ -390,16 +393,16 @@ function Index() {
             The terrace is open. The sea is waiting.
           </h2>
           <p className="mx-auto mt-6 max-w-[44ch] font-body text-base leading-relaxed text-cream/85 md:text-lg">
-            Reserve Villa Krasica directly through Booking.com, where the
-            listing, dates and rates live.
+            Get in touch directly for availability, rates, and anything you
+            need for your stay.
           </p>
           <a
-            href={BOOKING_URL}
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="anim-pulse-soft mt-9 inline-flex items-center gap-2 rounded-full bg-cream px-8 py-4 font-body text-sm font-medium text-terra ring-1 ring-cream/30"
           >
-            View on Booking.com
+            Contact me on WhatsApp
             <svg
               className="size-4 shrink-0"
               viewBox="0 0 20 20"
@@ -430,12 +433,12 @@ function Index() {
             203 Krasica, 51224 Krasica, Croatia
           </span>
           <a
-            href={BOOKING_URL}
+            href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="font-body text-sm transition-colors hover:text-cream"
           >
-            Booking.com
+            WhatsApp
           </a>
         </div>
       </footer>
