@@ -14,7 +14,8 @@ import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg.asset.json";
 import galleryTerrace from "@/assets/gallery-terrace.jpg.asset.json";
 import terraceSunset from "@/assets/terrace-sunset.jpg.asset.json";
 
-const BOOKING_URL = "https://www.booking.com/Share-JzZeWOi";
+const WHATSAPP_URL =
+  "https://wa.me/385917307118?text=Hi%2C%20I%27m%20interested%20in%20Villa%20Krasica.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
