@@ -40,6 +40,8 @@ export const Route = createFileRoute("/")({
           "A 5-star private villa in Krasica, Croatia. Sea-view pool, tennis court, sauna, jacuzzi, and the whole horizon to yourself.",
       },
       { property: "og:image", content: heroAerial.url },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: heroAerial.url },
     ],
   }),

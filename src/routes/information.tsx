@@ -24,6 +24,8 @@ export const Route = createFileRoute("/information")({
   head: () => ({
     meta: [
       { title: "Information — Villa Krasica" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       {
         name: "description",
         content:
