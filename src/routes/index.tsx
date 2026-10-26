@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import { ClientOnly } from "@tanstack/react-router";
 
 import { SHOPS, RESTAURANTS, BEACHES, type GuideItem } from "@/lib/places";
+import { AuthControl } from "@/components/AuthControl";
 
 const VillaMap = lazy(() => import("@/components/VillaMap"));
 const VillaWeather = lazy(() => import("@/components/VillaWeather"));
@@ -63,14 +64,14 @@ function Index() {
         <div className="absolute inset-0 hidden bg-gradient-to-t from-ink/70 via-ink/10 to-ink/30 md:block" />
 
 
-        <header className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12">
+        <header className="relative z-10 flex flex-wrap items-center justify-between gap-4 px-6 py-6 md:px-12">
           <a
             href="/"
             className="font-display text-2xl tracking-wide text-cream md:text-3xl"
           >
             Villa Krasica
           </a>
-          <nav className="flex items-center gap-6 md:gap-8">
+          <nav className="flex flex-wrap items-center gap-x-5 gap-y-2 text-cream md:gap-x-8">
             <Link
               to="/gallery"
               className="border-b border-cream/40 pb-1 font-body text-sm tracking-wide text-cream/90 transition-colors hover:border-cream"
@@ -89,6 +90,7 @@ function Index() {
             >
               Guest guide
             </a>
+            <AuthControl />
           </nav>
         </header>
 
