@@ -1,40 +1,40 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import heroAerial from "@/assets/hero-aerial.jpg.asset.json";
-import galleryPool from "@/assets/gallery-pool.jpg.asset.json";
-import saunaJacuzzi1 from "@/assets/sauna-jacuzzi-1.jpg.asset.json";
-import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg.asset.json";
-import galleryTerrace from "@/assets/gallery-terrace.jpg.asset.json";
-import terraceSunset from "@/assets/terrace-sunset.jpg.asset.json";
+import heroAerial from "@/assets/hero-aerial.jpg";
+import galleryPool from "@/assets/gallery-pool.jpg";
+import saunaJacuzzi1 from "@/assets/sauna-jacuzzi-1.jpg";
+import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg";
+import galleryTerrace from "@/assets/gallery-terrace.jpg";
+import terraceSunset from "@/assets/terrace-sunset.jpg";
 
 const GALLERY_IMAGES = [
   {
-    src: heroAerial.url,
+    src: heroAerial,
     alt: "Aerial view of Villa Krasica with private pool, tennis court and the Adriatic sea beyond",
     caption: "Villa from above",
   },
   {
-    src: galleryPool.url,
+    src: galleryPool,
     alt: "Private sea-view swimming pool at Villa Krasica with sun loungers and the villa in the background",
     caption: "Sea-view pool",
   },
   {
-    src: saunaJacuzzi1.url,
+    src: saunaJacuzzi1,
     alt: "Private jacuzzi and cedar sauna at Villa Krasica",
     caption: "Sauna & jacuzzi",
   },
   {
-    src: saunaJacuzzi2.url,
+    src: saunaJacuzzi2,
     alt: "Jacuzzi with bubbling water and sauna in the background at Villa Krasica",
     caption: "Jacuzzi detail",
   },
   {
-    src: galleryTerrace.url,
+    src: galleryTerrace,
     alt: "Outdoor terrace and dining area at Villa Krasica with the pool nearby",
     caption: "Terrace & dining",
   },
   {
-    src: terraceSunset.url,
+    src: terraceSunset,
     alt: "Terrace doors at Villa Krasica opening to a golden sunset over the Adriatic sea",
     caption: "Sunset terrace",
   },
