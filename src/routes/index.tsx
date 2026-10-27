@@ -5,7 +5,6 @@ import { ClientOnly } from "@tanstack/react-router";
 import { SHOPS, RESTAURANTS, BEACHES, type GuideItem } from "@/lib/places";
 import { AuthControl } from "@/components/AuthControl";
 
-const VillaMap = lazy(() => import("@/components/VillaMap"));
 const VillaWeather = lazy(() => import("@/components/VillaWeather"));
 
 import heroAerial from "@/assets/hero-courts.jpg";
@@ -324,24 +323,6 @@ function Index() {
             <GuideColumn title="Beaches" items={BEACHES} />
           </div>
 
-          <div className="mt-16">
-            <h3 className="mb-6 font-body text-xs uppercase tracking-[0.3em] text-terra">
-              On the map
-            </h3>
-            <ClientOnly
-              fallback={
-                <div className="h-[420px] w-full rounded-[min(1.5vw,14px)] border border-clay/30 bg-linen md:h-[520px]" />
-              }
-            >
-              <Suspense
-                fallback={
-                  <div className="h-[420px] w-full rounded-[min(1.5vw,14px)] border border-clay/30 bg-linen md:h-[520px]" />
-                }
-              >
-                <VillaMap />
-              </Suspense>
-            </ClientOnly>
-          </div>
 
           <div className="mt-16">
             <h3 className="mb-6 font-body text-xs uppercase tracking-[0.3em] text-terra">
