@@ -18,7 +18,7 @@ import terraceSunset from "@/assets/terrace-sunset.jpg";
 const WHATSAPP_URL =
   "https://wa.me/385917307118?text=Hi%2C%20I%27m%20interested%20in%20Villa%20Krasica.";
 
-const BOOKING_URL = "https://www.booking.com/Share-JzZeWOi";
+const BOOKING_EMAIL_URL = "mailto:vila.krasica@gmail.com?subject=Villa%20Krasica%20booking%20inquiry";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,10 +41,8 @@ export const Route = createFileRoute("/")({
         content:
           "A 5-star private villa in Krasica, Croatia. Sea-view pool, tennis court, sauna, jacuzzi, and the whole horizon to yourself.",
       },
-      { property: "og:image", content: heroAerial },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: heroAerial },
     ],
   }),
   component: Index,
@@ -142,9 +140,7 @@ function Index() {
               </svg>
             </a>
             <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={BOOKING_EMAIL_URL}
               className="inline-flex items-center gap-2 rounded-full border border-cream/60 px-7 py-3 font-body text-sm font-medium text-cream transition-colors hover:bg-cream/10"
             >
               Book now
