@@ -49,6 +49,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [calendarOpen, setCalendarOpen] = useState(false);
   return (
     <main className="font-body text-ink antialiased">
       {/* HERO */}
@@ -159,6 +160,27 @@ function Index() {
                 />
               </svg>
             </a>
+            <button
+              type="button"
+              onClick={() => setCalendarOpen(true)}
+              className="inline-flex items-center gap-2 rounded-full border border-cream/60 px-7 py-3 font-body text-sm font-medium text-cream transition-colors hover:bg-cream/10"
+            >
+              Calendar
+              <svg
+                className="size-4 shrink-0"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <rect x="3" y="5" width="14" height="12" rx="1.5" />
+                <path
+                  d="M7 3v4M13 3v4M3 9h14M6.5 12h2M11.5 12h2M6.5 15h2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
           </div>
         </div>
       </section>
