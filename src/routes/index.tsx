@@ -8,12 +8,12 @@ import { AuthControl } from "@/components/AuthControl";
 const VillaMap = lazy(() => import("@/components/VillaMap"));
 const VillaWeather = lazy(() => import("@/components/VillaWeather"));
 
-import heroAerial from "@/assets/hero-courts.jpg.asset.json";
-import galleryPool from "@/assets/gallery-pool.jpg.asset.json";
-import saunaJacuzzi1 from "@/assets/sauna-jacuzzi-1.jpg.asset.json";
-import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg.asset.json";
-import galleryTerrace from "@/assets/gallery-terrace.jpg.asset.json";
-import terraceSunset from "@/assets/terrace-sunset.jpg.asset.json";
+import heroAerial from "@/assets/hero-courts.jpg";
+import galleryPool from "@/assets/gallery-pool.jpg";
+import saunaJacuzzi1 from "@/assets/sauna-jacuzzi-1.jpg";
+import saunaJacuzzi2 from "@/assets/sauna-jacuzzi-2.jpg";
+import galleryTerrace from "@/assets/gallery-terrace.jpg";
+import terraceSunset from "@/assets/terrace-sunset.jpg";
 
 const WHATSAPP_URL =
   "https://wa.me/385917307118?text=Hi%2C%20I%27m%20interested%20in%20Villa%20Krasica.";
@@ -39,10 +39,10 @@ export const Route = createFileRoute("/")({
         content:
           "A 5-star private villa in Krasica, Croatia. Sea-view pool, tennis court, sauna, jacuzzi, and the whole horizon to yourself.",
       },
-      { property: "og:image", content: heroAerial.url },
+      { property: "og:image", content: heroAerial },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: heroAerial.url },
+      { name: "twitter:image", content: heroAerial },
     ],
   }),
   component: Index,
@@ -55,7 +55,7 @@ function Index() {
       <section className="relative overflow-hidden bg-ink md:min-h-[92vh]">
         <div className="absolute inset-0 hidden overflow-hidden md:block">
           <img
-            src={heroAerial.url}
+            src={heroAerial}
             alt="Aerial view of Villa Krasica showing the private pool, tennis court, football pitch and the Adriatic sea beyond"
             className="anim-kenburns h-full w-full object-cover"
             width={1280}
@@ -97,7 +97,7 @@ function Index() {
         </header>
 
         <img
-          src={heroAerial.url}
+          src={heroAerial}
           alt="Aerial view of Villa Krasica showing the private pool, tennis court, football pitch and the Adriatic sea beyond"
           className="relative z-10 block w-full md:hidden"
           width={1320}
@@ -155,7 +155,7 @@ function Index() {
           <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-5">
             <div className="md:col-span-2 md:row-span-2">
               <img
-                src={galleryPool.url}
+                src={galleryPool}
                 alt="Private sea-view swimming pool at Villa Krasica with sun loungers and the villa in the background"
                 className="h-full w-full rounded-[min(1.5vw,14px)] object-cover"
                 width={1280}
@@ -165,7 +165,7 @@ function Index() {
             </div>
             <div>
               <img
-                src={saunaJacuzzi1.url}
+                src={saunaJacuzzi1}
                 alt="Private jacuzzi and cedar sauna at Villa Krasica"
                 className="aspect-square w-full rounded-[min(1.5vw,14px)] object-cover"
                 width={1024}
@@ -175,7 +175,7 @@ function Index() {
             </div>
             <div>
               <img
-                src={saunaJacuzzi2.url}
+                src={saunaJacuzzi2}
                 alt="Jacuzzi with bubbling water and sauna in the background at Villa Krasica"
                 className="aspect-square w-full rounded-[min(1.5vw,14px)] object-cover"
                 width={1024}
@@ -269,7 +269,7 @@ function Index() {
           </div>
           <div>
             <img
-              src={galleryTerrace.url}
+              src={galleryTerrace}
               alt="Outdoor terrace and dining area at Villa Krasica with the pool nearby"
               className="aspect-[5/4] w-full rounded-[min(1.5vw,14px)] object-cover"
               width={1280}
@@ -383,7 +383,7 @@ function Index() {
       >
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={terraceSunset.url}
+            src={terraceSunset}
             alt="Terrace doors at Villa Krasica opening to a golden sunset over the Adriatic sea"
             className="anim-shimmer h-full w-full object-cover"
             width={1600}
