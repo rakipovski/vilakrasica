@@ -1,9 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import { ClientOnly } from "@tanstack/react-router";
 
 import { SHOPS, RESTAURANTS, BEACHES, type GuideItem } from "@/lib/places";
 import { AuthControl } from "@/components/AuthControl";
+import { AvailabilityCalendar } from "@/components/AvailabilityCalendar";
 
 const VillaWeather = lazy(() => import("@/components/VillaWeather"));
 
