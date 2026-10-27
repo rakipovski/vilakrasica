@@ -18,6 +18,8 @@ import terraceSunset from "@/assets/terrace-sunset.jpg";
 const WHATSAPP_URL =
   "https://wa.me/385917307118?text=Hi%2C%20I%27m%20interested%20in%20Villa%20Krasica.";
 
+const BOOKING_URL = "https://www.booking.com/Share-JzZeWOi";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -117,27 +119,51 @@ function Index() {
             A stone-and-olive villa on the hillside above Krasica — three
             bedrooms, a sea-view pool, and the whole horizon to yourself.
           </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="anim-pulse-soft mt-8 inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3 font-body text-sm font-medium text-terra ring-1 ring-cream/30"
-          >
-            Contact me
-            <svg
-              className="size-4 shrink-0"
-              viewBox="0 0 20 20"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="anim-pulse-soft inline-flex items-center gap-2 rounded-full bg-cream px-7 py-3 font-body text-sm font-medium text-terra ring-1 ring-cream/30"
             >
-              <path
-                d="M3 10h13m0 0-4-4m4 4-4 4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+              Contact me
+              <svg
+                className="size-4 shrink-0"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <path
+                  d="M3 10h13m0 0-4-4m4 4-4 4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-cream/60 px-7 py-3 font-body text-sm font-medium text-cream transition-colors hover:bg-cream/10"
+            >
+              Book now
+              <svg
+                className="size-4 shrink-0"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+              >
+                <rect x="3" y="5" width="14" height="12" rx="1.5" />
+                <path
+                  d="M7 3v4M13 3v4M3 9h14"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
